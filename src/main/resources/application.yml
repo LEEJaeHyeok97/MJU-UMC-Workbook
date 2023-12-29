@@ -2,9 +2,12 @@ spring:
   config:
     import: optional:file:.env[.properties]
   datasource:
-    url: jdbc:mysql://localhost:3306/study2
-    username: ${MYSQL_USER}
-    password: ${MYSQL_ROOT_PASSWORD}
+#    url: jdbc:mysql://localhost:3306/study2
+#    username: ${MYSQL_USER}
+#    password: ${MYSQL_ROOT_PASSWORD}
+    url: jdbc:mysql://test-db.ckphfwsaatii.ap-northeast-2.rds.amazonaws.com:3306/spring?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: "admin"
+    password: "adminadmin"
     driver-class-name: com.mysql.cj.jdbc.Driver
   sql:
     init:
